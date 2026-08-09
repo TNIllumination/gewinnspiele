@@ -10,7 +10,26 @@
   body { margin: 0 auto; padding: 2rem 1.25rem 5rem; max-width: 44rem;
     font: 17px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     color: #1e293b; background: #f8fafc; overflow-wrap: break-word; }
-  h1 { font-size: 1.9rem; margin: 0 0 .5rem; }
+  h1 { font-size: 1.9rem; margin: 0 0 1.5rem; }
+  h2 { font-size: 1.3rem; margin: 2.5rem 0 .75rem; padding-top: .75rem;
+    border-top: 2px solid #e2e8f0; }
+  h3 { font-size: 1.05rem; margin: 1.5rem 0 .5rem; }
+  pre { background: #1e293b; color: #e2e8f0; padding: 1rem; border-radius: 8px;
+    overflow-x: auto; font-size: .8rem; line-height: 1.5; white-space: pre-wrap;
+    word-break: break-all; }
+  code { background: #e8edf3; padding: .12em .4em; border-radius: 4px;
+    font-size: .85em; font-family: ui-monospace, Consolas, monospace; }
+  pre code { background: none; padding: 0; }
+  .bedingungen { white-space: pre-wrap; background: #fff; border: 1px solid #e2e8f0;
+    border-radius: 12px; padding: 1.5rem; }
+  dl { display: grid; grid-template-columns: max-content 1fr; gap: .35rem 1rem; }
+  dt { font-weight: 600; color: #475569; }
+  dd { margin: 0; }
+  dd code { word-break: break-all; }
+  blockquote { margin: .4rem 0 0; padding: .5rem .9rem; border-left: 3px solid #cbd5e1;
+    background: #f1f5f9; border-radius: 0 6px 6px 0; }
+  ol.gewinner { padding-left: 1.3rem; }
+  ol.gewinner li { margin: 1rem 0; }
   .unter { color: #64748b; margin: 0 0 2rem; }
   ul.gewinnspiele { list-style: none; padding: 0; margin: 0; }
   ul.gewinnspiele li { background: #fff; border: 1px solid #e2e8f0;
@@ -24,11 +43,17 @@
   .hinweis { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #e2e8f0;
     font-size: .85rem; color: #64748b; }
   a { color: #1d4ed8; }
+  footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e2e8f0;
+    font-size: .85rem; color: #64748b; }
   @media (prefers-color-scheme: dark) {
     body { color: #e2e8f0; background: #0f172a; }
-    ul.gewinnspiele li, .leer { background: #1e293b; border-color: #334155; }
+    h2 { border-top-color: #334155; }
+    code { background: #1e293b; }
+    .bedingungen, ul.gewinnspiele li, .leer { background: #1e293b; border-color: #334155; }
+    blockquote { background: #1e293b; border-left-color: #475569; }
+    dt { color: #94a3b8; }
     a, ul.gewinnspiele a { color: #93c5fd; }
-    .hinweis { border-top-color: #334155; }
+    footer, .hinweis { border-top-color: #334155; }
   }
 </style>
 </head>
@@ -37,8 +62,16 @@
 <h1>Gewinnspiele</h1>
 <p class="unter">von Tobisreise</p>
 
-<p class="leer">Hier erscheinen die Gewinnspiele, sobald das erste
-         veröffentlicht ist.</p>
+<ul class="gewinnspiele">
+  <li>
+    <a href="test-2.html">test 2</a>
+    <span class="zustand">läuft</span>
+  </li>
+  <li>
+    <a href="test-3.html">test 3</a>
+    <span class="zustand">abgeschlossen · Einsendeschluss 11. August 2026 um 20:13</span>
+  </li>
+</ul>
 
 <div class="hinweis">
   <p>
@@ -52,8 +85,10 @@
     nicht an die Plattform, sondern an Tobisreise
     (kooptobisreise@gmail.com).
   </p>
-  <p>Veranstalter: Tobisreise · <a href="https://mein.online-impressum.de/tobisreise/" target="_blank" rel="noreferrer">Impressum</a></p>
 </div>
+<footer>
+  Veranstalter: Tobisreise · Kontakt: kooptobisreise@gmail.com · <a href="https://mein.online-impressum.de/tobisreise/" target="_blank" rel="noreferrer">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>
+</footer>
 
 </body>
 </html>
